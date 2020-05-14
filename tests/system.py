@@ -67,7 +67,9 @@ class TestTranslate(unittest.TestCase):
         self.assertEqual(translations[1]["translatedText"].lower(), u"fünfzehn")
 
         self.assertEqual(translations[2]["detectedSourceLanguage"], "es")
-        self.assertEqual(translations[2]["translatedText"].lower(), u"ich heiße jeff")
+        self.assertEqual(
+            translations[2]["translatedText"].lower(), "mein name ist jeff"
+        )
 
         self.assertEqual(translations[3]["detectedSourceLanguage"], "en")
         self.assertEqual(
